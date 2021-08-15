@@ -12,11 +12,11 @@ const signin = async (data) => {
 }
 
 const authenticate = (data) => {
-    sessionStorage.setItem('user', JSON.stringify(data));
+    localStorage.setItem('user', JSON.stringify(data));
 }
 
 const isAuthenticated = () => {
-    return sessionStorage.getItem('user') ? JSON.parse(sessionStorage.getItem('user')) : false
+    return localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : false
 }
 
 module.exports = { signin, authenticate, isAuthenticated };

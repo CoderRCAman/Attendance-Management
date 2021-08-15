@@ -3,7 +3,7 @@ import { Route, Redirect } from 'react-router-dom';
 import { isAuthenticated } from './AuthApiCalls'
 
 const AdminRoute = ({ component: Component, ...rest }) => {
-    console.log(isAuthenticated().role)
+    // console.log(isAuthenticated().role)
 
     return (
 

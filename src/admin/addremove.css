@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap')
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+	width: 2px; 
+  height: 4px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 2px solid #555555;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.btnOuter:active{
+  box-shadow: #0e153a 0px 0px 0px 3px;
+}
+
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.flex-container > div {
+padding-top:10px;
+}
+.paginate-ctn{
+    display: flex;
+}
+.round-effect{
+  color:#DD4124;
+  cursor:pointer;
+/*   border:1px solid red; */
+  
+  font-size:16px;
+  text-align:center;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:9px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin:5px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   text-decoration: none;
+}
+
+.round-effect:hover{
+  text-decoration: none;
+  background:#DD4124;
+  color:#FFF;
+} 
+
+.not-round-effect{
+    color:#DD4124;
+  cursor:pointer;
+/*   border:1px solid red; */
+  
+  font-size:16px;
+  text-align:center;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:9px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin:5px;
+   text-decoration: none;
+  background:#DD4124;
+  color:#FFF; 
+  pointer-events: none;
+  opacity: 0.3;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   text-decoration: none;
+}
+.round-effect:hover a {
+  text-decoration: none;
+  color:#FFF;
+}
+
+.not-round-effect:hover a{
+   text-decoration: none;
+   color:#FFF;
+}
+
+.active{
+  background:#DD4124;
+  color:#FFF;
+}
+a:link {
+  text-decoration: none;
+  color:#DD4124;
+}
+/* arrow for dropdown  */
+.arrow{
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top:44px;
+  border-bottom: 10px solid rgb(156, 163, 175);
+  position: absolute;
+}
